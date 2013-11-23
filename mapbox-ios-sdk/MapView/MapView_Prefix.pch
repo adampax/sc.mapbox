@@ -18,7 +18,8 @@
 #else  
 // DEBUG not defined:
 
-#define RMLog(args...)    // do nothing.
+//TODO set up logging to match Titanium's log level
+#define RMLog(args...) NSLog(@"%@", [NSString stringWithFormat: args])
 #define LogMethod() 
 #define WarnDeprecated() 
 #define NS_BLOCK_ASSERTIONS 1
