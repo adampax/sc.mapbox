@@ -26,6 +26,8 @@
     
     mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
+    mapView.hideAttribution = hideAttribution;
+    
     [self addSubview:mapView];
 }
 
@@ -54,6 +56,10 @@
 -(void)setCenterLatLng_:(id)_center {
     centerLat = [TiUtils floatValue:[_center objectAtIndex:0]];
     centerLng = [TiUtils floatValue:[_center objectAtIndex:1]];
+}
+
+-(void)setHideAttribution_:(id)_hideAttribution {
+    hideAttribution = [TiUtils boolValue:_hideAttribution def:false];
 }
 
 -(void)setMinZoom_:(id)_minZoom {

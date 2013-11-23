@@ -14,6 +14,7 @@
     float maxZoom;
     float centerLat;
     float centerLng;
+    float hideAttribution;
     
     RMMapView *mapView;
 }
