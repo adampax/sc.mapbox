@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>139C8411-F63F-47BE-A97D-399C5163CD55</string>
+	<string>E9CCE500-AB0E-4E6C-9B9F-F2B0170158C0</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Mapbox</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>C12D67D2-CBD1-4593-BD98-B5A8B3EFE1D2</key>
-		<string>ssh://github.com/adampax/sc.mapbox.git</string>
+		<key>BB0BF35E-DA3B-4DFC-A841-F84FE8147EC4</key>
+		<string>https://github.com/adampax/titanium-mapbox.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Mapbox.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>C12D67D2-CBD1-4593-BD98-B5A8B3EFE1D2</key>
+		<key>BB0BF35E-DA3B-4DFC-A841-F84FE8147EC4</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/adampax/sc.mapbox.git</string>
+	<string>https://github.com/adampax/titanium-mapbox.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C12D67D2-CBD1-4593-BD98-B5A8B3EFE1D2</string>
+	<string>BB0BF35E-DA3B-4DFC-A841-F84FE8147EC4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C12D67D2-CBD1-4593-BD98-B5A8B3EFE1D2</string>
+			<string>BB0BF35E-DA3B-4DFC-A841-F84FE8147EC4</string>
 			<key>IDESourceControlWCCName</key>
-			<string>sc</string>
+			<string>titanium-mapbox</string>
 		</dict>
 	</array>
 </dict>

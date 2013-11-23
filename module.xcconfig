@@ -26,5 +26,3 @@
 // IMPORTANT NOTE: always use $(inherited) in your overrides
 // 
 
-OTHER_LDFLAGS=$(inherited) -framework Mapbox -F "/Users/adam/Dev/git/sc.mapbox"
-
