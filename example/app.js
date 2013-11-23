@@ -10,27 +10,25 @@ var win = Ti.UI.createWindow({
 });
 
 
-
-
 var mapbox = require('sc.mapbox');
 
 var mapView = mapbox.createView({
-	host: 'tiles.snowcietyapp.com/snowciety',
-	minZoom: 12,
-	maxZoom: 18,
-	zoom: 13,
-	centerLatLng: [45.467354,6.903534],
+	map: 'control-room', //'tiles.snowcietyapp.com/snowciety',
+	//map: 'geography-class',
+	minZoom: 7,
+	maxZoom: 12,
+	zoom: 10,
+	centerLatLng: [20.7972,-88.1598],
 	width: Ti.UI.FILL,
-	height: Ti.UI.FILL
+	height: Ti.UI.FILL,
+	hideAttribution: true  //defaults to: false. See Mapbox terms and conditions before removing
 });
 
 win.add(mapView);
 win.open();
 
-var marker = mapView.createMarker({
-	latlng: [45.467354,6.903534]
-});
 
-Ti.API.info(marker);
- 
+var marker = mapView.createMarker({
+	latlng: [20.7972,-88.1598],
+});
  

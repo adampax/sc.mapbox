@@ -15,12 +15,23 @@
 -(void)createView {
 	NSLog(@"[Mapbox] createView");
     
-    NSLog(@"[Mapbox] %@", host);
+   // RMGenericMapSource *mapSource = [[RMGenericMapSource alloc] initWithHost:host tileCacheKey:@"snowcietyTiles" minZoom:minZoom maxZoom:maxZoom];
     
-    RMGenericMapSource *snowcietySource = [[RMGenericMapSource alloc] initWithHost:host tileCacheKey:@"snowcietyTiles" minZoom:minZoom maxZoom:maxZoom];
+    //use offline map stored locally
+    RMMBTilesSource *mapSource = [[RMMBTilesSource alloc] initWithTileSetResource:host ofType:@"mbtiles"];
     
-    mapView = [[RMMapView alloc] initWithFrame:[self frame] andTilesource:snowcietySource];
-    mapView.zoom = zoom;
+    mapView = [[RMMapView alloc] initWithFrame:[self frame] andTilesource:mapSource];
+    
+    [mapView setZoom:zoom];
+    [mapView setMaxZoom:maxZoom];
+
+    NSLog(@"zoom %f", zoom);
+    NSLog(@"minZoom %f", minZoom);
+    NSLog(@"maxZoom %f", maxZoom);
+    
+    //mapView.zoom = zoom;
+    //mapView.minZoom = minZoom;
+    //mapView.maxZoom = maxZoom;
     
     mapView.centerCoordinate = CLLocationCoordinate2DMake(centerLat, centerLng);
     
@@ -49,7 +60,7 @@
     }
 }
 
--(void)setHost_:(id)_host {
+-(void)setMap_:(id)_host {
     host = _host;
 }
 
@@ -72,6 +83,7 @@
 
 -(void)setZoom_:(id)_zoom {
     zoom = [TiUtils floatValue:_zoom];
+    NSLog(@"setZoom %@", _zoom);
 }
 
 @end
