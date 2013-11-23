@@ -6,8 +6,8 @@
  */
 
 #import "ScMapboxView.h"
-#import "Mapbox/Mapbox.h"
-#import <Mapbox/RMOpenStreetMapSource.h>
+#import "Mapbox.h"
+#import <RMOpenStreetMapSource.h>
 
 
 @implementation ScMapboxView

@@ -8,7 +8,7 @@
 #import "ScMapboxViewProxy.h"
 #import "ScMapboxView.h"
 #import "TiUtils.h"
-#import "Mapbox/MapBox.h"
+#import "MapBox.h"
 
 @implementation ScMapboxViewProxy
 

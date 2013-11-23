@@ -5,7 +5,7 @@
  * Please see the LICENSE included with this distribution for details.
  */
 #import "TiUIView.h"
-#import "Mapbox/Mapbox.h"
+#import "Mapbox.h"
 
 @interface ScMapboxView : TiUIView {
     NSString *host;
